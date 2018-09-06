@@ -1,0 +1,10 @@
+{% extends "postlogin_layout.html" %}
+{% block content %}
+    <h3>Hello {{username}}!</h3><br>
+    <h2>These are your login history details:</h2>
+    <ul>
+        {% for timestamp in timestamps %}
+            <li>{{timestamp}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
